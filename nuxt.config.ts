@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     imports: {
         dirs: ['stores'],
     },
-    css: ['~/assets/css/tailwind.css'],
+    css: ['~/assets/css/tailwind.css', '~/assets/scss/main.scss'],
     postcss: {
         plugins: {
             tailwindcss: {},
@@ -25,7 +25,8 @@ export default defineNuxtConfig({
     },
     modules: [
         '@nuxtjs/tailwindcss',
-        '@pinia/nuxt'
+        '@pinia/nuxt',
+        "nuxt-icon"
     ],
     vite: {
         css: {
